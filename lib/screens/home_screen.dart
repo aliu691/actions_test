@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:new_tests/route/route_name.dart';
-import 'package:new_tests/theme/theme_manager.dart';
+//import 'package:new_tests/theme/theme_manager.dart';
 import 'package:new_tests/widgets/custom_elevated_button.dart';
 
-ThemeManager _themeManager = ThemeManager();
+//ThemeManager _themeManager = ThemeManager();
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
