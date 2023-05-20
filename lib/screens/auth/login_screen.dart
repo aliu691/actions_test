@@ -20,7 +20,7 @@ class LoginScreen extends StatelessWidget {
               decoration: InputDecoration(
                   label: Text(
                 'sample',
-                style: Theme.of(context).textTheme.bodyMedium,
+                style: Theme.of(context).textTheme.bodyLarge,
               )),
             ),
           ],

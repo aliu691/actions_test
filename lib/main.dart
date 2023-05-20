@@ -1,12 +1,12 @@
 // ignore_for_file: no_leading_underscores_for_local_identifiers
 
 import 'package:flutter/material.dart';
-import 'package:new_tests/route/route_name.dart';
+//import 'package:new_tests/route/route_name.dart';
 import 'package:new_tests/screens/home_screen.dart';
 //import 'package:new_tests/route/route_name.dart';
 //import 'package:new_tests/theme/color_schemes.g.dart';
 import 'package:new_tests/theme/theme_constants.dart';
-import 'package:new_tests/theme/theme_manager.dart';
+//import 'package:new_tests/theme/theme_manager.dart';
 
 import 'package:new_tests/route/router.dart' as route;
 
@@ -14,7 +14,7 @@ void main() {
   runApp(const MyApp());
 }
 
-ThemeManager _themeManager = ThemeManager();
+//ThemeManager _themeManager = ThemeManager();
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
