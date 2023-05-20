@@ -33,7 +33,7 @@ jobs:
   build_apk:
     name: Build Flutter Android
     #needs means it requires the success of that mode
-    needs: [flutter-test]
+    needs: [flutter_test]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
