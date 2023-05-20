@@ -28,21 +28,12 @@ jobs:
       
       # Run widget tests for our flutter project.
       #- run: flutter test
-      
-      # Build apk.
-      - run: flutter build apk
-      
-      #Upload generated apk to the artifacts.
-      #   uses: actions/upload-artifact@master
-      #   with:
-      #     name: apk-release
-      #     path: build/app/outputs/bundle/release/app-release.apk
 
   #job for building android app
   build_apk:
     name: Build Flutter Android
     #needs means it requires the success of that mode
-    needs: [flutter-test]
+    needs: [flutter_test]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -60,3 +51,22 @@ jobs:
       
       # Build apk.
       - run: flutter build apk
+
+  # upload_apk:
+  #   name: Upload APK
+  #   #needs means it requires the success of that mode
+  #   needs: [build_apk]
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - uses: actions/setup-java@v1
+  #       with:
+  #         java-version: '12.x'
+  #     - uses: subosito/flutter-action@v2
+  #       with:
+  #         channel: 'stable'
+  #     - uses: actions/upload-artifact@v3
+  #       with:
+  #         name: release-apk
+  #         path: ../build/app/outputs/flutter-apk/app-debug.apk
+  #         if-no-files-found: error
