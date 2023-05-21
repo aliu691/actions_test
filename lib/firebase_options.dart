@@ -70,7 +70,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '599163805675',
     projectId: 'ci-cd-test-e14d6',
     storageBucket: 'ci-cd-test-e14d6.appspot.com',
-    iosClientId: '599163805675-ukgb6hovtosuvr6j79v76vnr9oe2co75.apps.googleusercontent.com',
+    iosClientId:
+        '599163805675-ukgb6hovtosuvr6j79v76vnr9oe2co75.apps.googleusercontent.com',
     iosBundleId: 'com.example.newTests',
   );
 }
